@@ -1,6 +1,5 @@
 <?php
 
-require __DIR__ . '/Router/Helper.php';
 require __DIR__ . '/Router/Dispatcher.php';
 require __DIR__ . '/Router/Route.php';
 require __DIR__ . '/Router/Builder.php';

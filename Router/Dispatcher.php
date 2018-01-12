@@ -4,8 +4,6 @@ namespace Router;
 
 class Dispatcher
 {
-  use Helper;
-
   public $route;
   public $path;
   public $params;
