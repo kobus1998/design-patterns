@@ -34,13 +34,7 @@ if (strpos($reqUrl, 'api'))
 }
 else
 {
-  // view routes
-  // api routes
-
-  $router->post('/post', function ($request) {
-    echo 'post\'ed';
-  });
-
+  // view
   $router->get('/', function ($request) {
     echo 'home view';
   });
@@ -51,6 +45,10 @@ else
 
   $router->get('/user/:userId', function ($request) {
     echo 'user detail view ' . $request['userId'];
+  });
+
+  $router->post('/post', function ($request) {
+    echo 'post\'ed';
   });
 }
 
